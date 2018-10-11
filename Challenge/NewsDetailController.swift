@@ -58,6 +58,8 @@ class NewsDetailController: UIViewController {
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = value
+        self.navigationController?.navigationBar.backgroundColor = .clear
+        UIApplication.shared.statusBarView?.backgroundColor = .clear
     }
     
     private func configureActivityIndicator() {
